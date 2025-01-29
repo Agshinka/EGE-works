@@ -1,0 +1,11 @@
+def fun(n, m, k):
+    return ((n + m) > k) and ((n + k) > m) and ((k + m) > n)
+
+
+for a in range (1000):
+    flag = True
+    for x in range (1, 1000):
+        if (((fun(x, 10, 20)) <= (not(max(x, 8)) > 24)) == (not(fun(3, a, x)))) == 0:
+            flag = False
+    if flag == True:
+        print(a)
