@@ -1,13 +1,11 @@
-pos = 0
-for n in range (245690, 245757):
-    pos += 1
-    k = 0
-    g = []
-    for d in range (2, n // 2 + 1):
-        if n % d == 0:
-            k+=1
-            g.append(d)
-            if k > 0:
-                break
-    if k == 0:
-        print(pos, n)
+def fun(n):
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+k=0
+for n in range (245_690, 245_756 + 1):
+    k+=1
+    if fun(n):
+        print(k, n)

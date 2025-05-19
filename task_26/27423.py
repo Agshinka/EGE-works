@@ -12,5 +12,4 @@ with open('files/27423.txt', 'r') as file:
             total += a[n]
             b.append(a[n])
     print(disk - total + b[-1])
-    print(len(b), a)      #Это ответ на задание
-
+    print(len(b), a)
